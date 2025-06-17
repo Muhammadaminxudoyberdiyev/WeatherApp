@@ -5,7 +5,8 @@ function WeatherData() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
 
-  const KEY = import.meta.env.REACT_APP_WEATHER_KEY
+  const KEY = import.meta.env.VITE_APP_WEATHER_KEY
+  // const KEY = "f500f00319901f8eced3c401cb25e546"
 
   const fetchWeather = async () => {
     if (!city) {
