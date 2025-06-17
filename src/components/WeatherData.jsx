@@ -6,7 +6,6 @@ function WeatherData() {
   const [error, setError] = useState("");
 
   const KEY = import.meta.env.VITE_APP_WEATHER_KEY
-  // const KEY = "f500f00319901f8eced3c401cb25e546"
 
   const fetchWeather = async () => {
     if (!city) {
